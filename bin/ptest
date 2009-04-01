@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /usr/bin/puppet --modulepath ~/puppet/modules/ "$@" tests/init.pp
