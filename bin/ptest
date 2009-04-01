@@ -1,3 +1,6 @@
 #!/bin/bash
 
-sudo /usr/bin/puppet --modulepath ~/puppet/modules/ "$@" tests/init.pp
+ROOTDIR=$HOME/puppettraining
+export RUBYLIB=$ROOTDIR/lib
+
+/usr/bin/puppet --modulepath $ROOTDIR/modules "$@" tests/init.pp
